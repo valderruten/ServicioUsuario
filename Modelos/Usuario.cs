@@ -15,10 +15,14 @@ namespace ServicioUsuario.Modelos
 
     public partial class Usuario
     {
+        [Display(Name = "Nombre del Usuario")]
         public string nombre { get; set; }
-        //public Nullable<System.DateTime> FechaNacimiento { get; set; }
+
+        [Display(Name = "Fecha de Nacimiento")]
         [DataType(DataType.Date)]
         public DateTime FechaNacimiento { get; set; }
+
+        [Display(Name = "Sexo")]
         public string sexo { get; set; }
 
      
